@@ -1,0 +1,119 @@
+.data_archive_overlay{
+    width: 100%;
+    min-height: 100%;
+
+    background: $app_bg;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    .archive_content{
+
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+
+        margin: 0 auto;
+
+    }
+
+    &.closed{
+        display: none;
+    }
+
+    &.opened{
+        display: block;
+    }
+}
+
+.data_buttons{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .graphs{
+        margin-right: 1rem;
+        font-size: .8rem;
+        a{
+            color: darken($corp_blue,25);
+            border: 2px solid darken($corp_blue,25);
+        }
+    }
+    .archive{
+        font-size: .8rem;
+
+        a{
+            color: $corp_orange;
+            border: 2px solid $corp_orange;
+        }
+    }
+}
+
+.searchbox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p{
+        margin: 0;
+    }
+}
+
+
+.injected_saved_data{
+    width: 100%;
+    .data_component{
+
+        margin-top: 1.2rem;
+        .day_date{
+            margin-bottom: 0.4rem;
+            font-size: 1.2rem;
+        }
+
+        .day_data_table{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(11, 1fr);
+        
+            border: 2px solid $corp_blue;
+            border-radius: 12px;
+
+            .table_item{
+                padding: .5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 2px solid $corp_blue;
+
+                font-size: .8rem;
+            }
+            
+            .col_1{
+                border-right: 2px solid $corp_blue;
+            }
+        
+            .sol_name{
+                grid-area: 1 / 1 / span 1 / span 1;
+            }
+        
+            .sol_data{
+                grid-area: 1 / 2 / span 1 / span 1;
+        
+            }
+            .warnings_name{
+                border-bottom: none;
+            }
+            .warnings_data{
+                border-bottom: none;
+
+            }
+        }
+
+        
+    }
+}

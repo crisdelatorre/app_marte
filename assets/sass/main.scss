@@ -1,0 +1,35 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
+
+
+* {
+  // border: 1px solid pink;
+}
+
+body {
+  color: $corp_blue;
+  background: $app_bg;
+  font-family: '3270 Condensed';
+
+  .app{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@import 'partials/home';
+@import 'partials/header';
+@import 'partials/mainmenu';
+@import 'partials/animationwindow';
+@import 'partials/buttons';
+@import 'partials/dataarchive';
+@import 'partials/popups';

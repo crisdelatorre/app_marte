@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Home</title>
+
+    <script src="./app/main.js"></script>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <div class="app">
+
+        <!-- H E A D E R  -->
+        <div class="header">
+            <div class="settings">
+                <i class="bi bi-gear"></i>
+            </div>
+            <div class="app_name">MARS APP</div>
+        </div>
+
+        <!-- M A I N   M E N U -->
+        <div class="app_menu">
+            <div class="box"></div>
+            <nav class="main_menu">
+                <ul class="menu_items">
+                    <li class="menu_item"><a href="assets/pages/picoftheday.html"><i class="bi bi-image"></i></a></li>
+                    <li class="menu_item"><a href="assets/pages/animation.html"><i class="bi bi-play-circle"></i></a></li>
+                    <li class="menu_item home"><i class="bi bi-house"></i></li>
+                    <li class="menu_item data_icon"><i class="bi bi-graph-up"></i></li>
+                    <li class="menu_item"><a href=""><i class="bi bi-battery-half"></i></a></li>
+                </ul>
+        </div>
+
+
+        <!-- A N I M A T I O N -->
+        <div class="animation_window">
+            <a href="assets/pages/animation.html">
+                <div class="bg_circle">
+                    <div class="animation">
+                        <!-- <div class="anim_img"> -->
+                        <img src="assets/img/sunny_window.jpg" alt="sunny martian landscape">
+                        <!-- </div> -->
+                    </div>
+                    <div class="upper_gradient"></div>
+                    <div class="lower_gradient"></div>
+                    <div class="weather_icon">
+                        <i class="bi bi-brightness-high"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="first_data_segment">
+
+            <!-- T E M P E R A T U R E S    P I L L  -->
+            <div class="temperature">
+            </div>
+
+            <!-- D A T A     M A N A G E M E N T  -->
+            <div class="data_management">
+                <div class="sol_count">
+                </div>
+
+                <div class="weather_status">
+
+                </div>
+
+                <div class="save_button simple_button"> SAVE DATA </div>
+
+                <div class="see_data_button simple_button">SEE SAVED DATA</div>
+            </div>
+        </div>
+
+        <!-- S U N   P O S I T I O N   D R A W I N G-->
+        <div class="drawing">
+            <div class="sun_trayectory">
+                <div class="sun"></div>
+            </div>
+            <div class="drw_ground">
+                <div class="ground_line"></div>
+                <div class="sun_time">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- S E C O N D A R Y    D A T A -->
+        <div class="secondary_measurements">
+        </div>
+
+        <!-- U V    D A T A -->
+        <div class="uv_element outlined_component">
+            <div class="uv_info">
+            </div>
+            <div class="uv_scale">
+                <div class="gradient"></div>
+                <div class="level_indicator"></div>
+            </div>
+        </div>
+
+        <!--  W A R N I N G -->
+        <div class="warning_alert">
+            <div class="warning_icon">
+                <span class="fa fa-exclamation-triangle"></span>
+            </div>
+            <div class="warning_info">
+                <div class="warning_tittle">WARNING:</div>
+                <div class="warning_explanation">SAND STORM APPROACHING</div>
+            </div>
+        </div>
+
+        <!-- N E W S  -->
+        <div class="news_button">
+            <a href="assets/pages/marsnews.html">
+                <div class="news_icon">
+                    <span class="fa fa-home"></span>
+                </div>
+                <div class="news_info">
+                    <div class="news_tittle">NEWS</div>
+                    <div class="news_subtittle">LATEST NEWS ABOUT MARS</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="vertical_buttons">
+            <div class="pic_of_the_day">
+                
+            </div>
+
+            <div class="todays_graphs">
+                <a href="">
+                    <div class="graphs_preview"></div>
+                    <div class="navigator_tittle">TODAY'S GRAPHS</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="game outlined_component">
+            <div class="game_tittle">SPACESHIP LEVELS</div>
+
+            <div class="game_elements">
+
+                <div class="battert_levels">
+
+                    <div class="fuel">
+                        <div class="tittle">FUEL</div>
+                        <div class="battery">
+                            <div class="battery_level"></div>
+                        </div>
+                    </div>
+
+                    <div class="devices">
+                        <div class="tittle">MEASURING DEVICES BATTERY</div>
+                        <div class="devices_battery">
+                            <div class="battery">
+                                <div class="battery1_level"></div>
+
+                            </div>
+                            <div class="battery">
+                                <div class="battery2_level"></div>
+
+                            </div>
+                            <div class="battery">
+                                <div class="battery3_level"></div>
+
+                            </div>
+                            <div class="battery">
+                                <div class="battery4_level"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recharge_button ">
+                    <a class="simple_button" href="">RECHARGE</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- P O P   U P   O V E R L A Y -->
+
+        <div class="confirmation_popup closed">
+            <div class="popup_content outlined_component">
+                <div class="confirmation_message">TODAY’S DATA HAS BEEN SAVED SUCCESSFULLY.</div>
+                <div class="check_message"> YOU CAN CHECK IT AT “SEE SAVED DATA” BELOW.</div>
+                <div class="ok_button simple_button">OK</div>
+            </div>
+        </div>
+
+        <!--  D A T A   A R C H I V E   O V E R L A Y -->
+        <div class="data_archive_overlay closed">
+            <div class="archive_content">
+                <div class="data_buttons">
+                    <div class="graphs">
+                        <a class="simple_button" href="">TODAY'S ELEMENT</a>
+                    </div>
+                    <div class="archive">
+                        <a class="simple_button" href="">ARCHIVE</a>
+                    </div>
+                </div>
+
+                <div class="searchbox simple_button">
+                    <p>SEARCH BY DATE:</p>
+                    <span class="fa fa-search"></span>
+                </div>
+
+                <div class="injected_saved_data">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

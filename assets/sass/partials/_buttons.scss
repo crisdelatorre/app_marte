@@ -1,0 +1,29 @@
+.simple_button{
+
+    border: 2px solid $corp_blue;
+    border-radius: 14px;
+    background: $buttons_bg;
+
+    margin-top: .5rem;
+    padding: .8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outlined_component{
+
+    border: 2px solid $corp_blue;
+    border-radius: 14px;
+
+    margin-top: 1rem;
+    padding: .8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
